@@ -329,7 +329,7 @@ footer p{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
   gap:35px;
-  margin-bottom:90px;
+  margin-bottom:10px;
 }
 
 .tier{
@@ -479,7 +479,364 @@ footer p{
     margin-right:auto;
   }
 
-  .panel-image img{
-    margin:40px auto 0;
+}
+
+.hero-cta{
+  margin-top:26px;
+  display:flex;
+  gap:16px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+/* =========================================================
+   FOOTER — FINAL STABLE OVERRIDE (NO STRUCTURE CHANGES)
+   ========================================================= */
+
+/* ---------- FULL-WIDTH DARK NAVY FOR ALL FOOTER AREAS ---------- */
+footer{
+  width:100vw;
+  margin-left:calc(50% - 50vw);
+  margin-right:calc(50% - 50vw);
+  background:#061a3a;
+  color:#cbd5e1;
+}
+
+/* Bottom legal strip MUST also be full width */
+.footer-legal{
+  width:100vw;
+  margin-left:calc(50% - 50vw);
+  margin-right:calc(50% - 50vw);
+  background:#061a3a;
+  color:#9fb9ff;
+  padding:1.4rem 1rem;
+  text-align:center;
+  font-size:13px;
+  border-top:1px solid rgba(255,255,255,0.12);
+}
+
+/* Prevent inner containers from painting white */
+footer > *,
+.footer-legal > *{
+  background:transparent !important;
+}
+
+/* ---------- FOOTER GRID (UNCHANGED STRUCTURE, JUST STABLE) ---------- */
+.footer-grid{
+  max-width:1200px;
+  margin:0 auto;
+  padding:4rem 1.5rem 3rem;
+
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:40px;
+}
+
+/* ---------- BRAND BLOCK — CENTER ONLY THIS ---------- */
+.footer-brand{
+  text-align:center;
+}
+
+.footer-brand h3{
+  color:#ffffff;
+  margin-bottom:.75rem;
+}
+
+.footer-brand p{
+  color:#9fb9ff;
+  line-height:1.7;
+  max-width:640px;
+  margin:0 auto;
+}
+
+/* ---------- OTHER FOOTER HEADINGS ---------- */
+footer h4{
+  color:#e6edff;
+  margin-bottom:10px;
+  font-weight:500;
+}
+
+/* ---------- FOOTER TEXT ---------- */
+footer p,
+footer li{
+  font-size:14px;
+  line-height:1.7;
+  color:#cbd5e1;
+}
+
+/* ---------- FOOTER LINKS ---------- */
+.footer-links a{
+  color:#a5c7ff;
+  text-decoration:none;
+  transition:.25s;
+}
+
+.footer-links a:hover{
+  color:#e6f0ff;
+  text-decoration:underline;
+}
+
+/* ---------- ICON + TEXT ALIGNMENT ---------- */
+.icon-links a{
+  display:flex;
+  align-items:center;
+  gap:.5rem;
+}
+
+/* ---------- SVG ICON SIZE + COLOR (FIXED) ---------- */
+/* Utility / feature icons only */
+.icon-links svg,
+.footer-highlights svg{
+  width:16px;
+  height:16px;
+  fill:#38bdf8;
+  stroke:#38bdf8;
+  flex-shrink:0;
+}
+
+/* ---------- FOOTER HIGHLIGHTS ---------- */
+.footer-highlights{
+  grid-column:1 / -1;
+  margin-bottom:2.5rem;
+}
+
+.footer-highlights ul{
+  display:flex;
+  flex-wrap:wrap;
+  gap:24px;
+  padding:20px 25px;
+  background:rgba(255,255,255,0.06);
+  border-radius:18px;
+  list-style:none;
+}
+
+.footer-highlights li{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:15px;
+  color:#e6edff;
+}
+
+.footer-highlights li::before{
+  content:"✓";
+  color:#38bdf8;
+  font-weight:700;
+}
+
+/* ---------- PAYMENT / BRAND ICONS — DO NOT TOUCH ---------- */
+.payment-icons svg{
+  width:auto;
+  height:26px;
+  fill:initial;
+  stroke:initial;
+}
+
+/* ---------- FORCE 4-COLUMN LAYOUT ---------- */
+.footer-columns{
+  grid-template-columns:repeat(4,1fr);
+}
+
+@media (max-width: 900px){
+  .footer-columns{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media (max-width: 520px){
+  .footer-columns{
+    grid-template-columns:1fr;
+  }
+}
+
+/* ---------- FOOTER COLUMN SPACING ---------- */
+.footer-col ul{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+.footer-col li{
+  margin-bottom:8px;
+}
+
+/* ---------- ICON LINKS SVG FIX ---------- */
+.icon-links svg{
+  width:16px;
+  height:16px;
+  fill:#38bdf8;
+  stroke:#38bdf8;
+}
+
+/* ---------- PAYMENT ICON ALIGNMENT ---------- */
+.payment-icons{
+  display:flex;
+  gap:16px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+/* =========================================================
+   BRAND-ACCURATE SVG COLORS (OVERRIDES ONLY)
+   ========================================================= */
+
+/* ---------- WhatsApp (Green) ---------- */
+.icon-links a[href*="whatsapp"] svg,
+.icon-links svg[aria-hidden="true"]:has(path[d*="7.6 19.2"]){
+  fill:#25D366;
+  stroke:#25D366;
+}
+
+/* ---------- Visa ---------- */
+.payment-icons svg[aria-label="Visa"] text{
+  fill:#1A1F71;
+}
+
+/* ---------- PayPal ---------- */
+.payment-icons svg[aria-label="PayPal"] text{
+  fill:#003087;
+}
+
+/* ---------- Mastercard ---------- */
+.payment-icons svg[aria-label="Mastercard"] circle:first-child{
+  fill:#EB001B; /* red */
+}
+
+.payment-icons svg[aria-label="Mastercard"] circle:last-child{
+  fill:#F79E1B; /* orange */
+}
+
+/* ---------- Crypto (Neutral Accent) ---------- */
+.payment-icons svg[aria-label="Crypto"] circle{
+  fill:#facc15;
+}
+
+
+.payment-icons svg{
+  height:26px;
+}
+/* =========================================================
+   FOOTER LINK TYPOGRAPHY & INTERACTION REFINEMENT
+   ========================================================= */
+
+/* Base footer link typography */
+footer a{
+  color:#9fb9ff;              /* light blue */
+  font-weight:400;
+  letter-spacing:.2px;
+  text-decoration:none;
+  transition:color .25s ease, transform .15s ease;
+}
+
+/* Hover / focus */
+footer a:hover,
+footer a:focus-visible{
+  color:#e6f0ff;              /* brighter blue */
+  text-decoration:none;
+}
+
+/* Active / click */
+footer a:active{
+  color:#c7d7ff;
+}
+
+/* List items spacing consistency */
+footer ul li{
+  margin-bottom:8px;
+}
+
+/* Support links (icon + text) */
+.icon-links a{
+  color:#9fb9ff;
+  font-weight:400;
+}
+
+/* Hover lift for support links */
+.icon-links a:hover{
+  color:#e6f0ff;
+  transform:translateX(2px);
+}
+
+/* Payment text labels (Visa / PayPal text SVGs) */
+.payment-icons text{
+  fill:#9fb9ff;
+  transition:fill .25s ease;
+}
+
+/* Payment hover */
+.payment-icons svg:hover text{
+  fill:#e6f0ff;
+}
+
+/* =========================================================
+   FOOTER SPACING REFINEMENT (TOP FOOTER ONLY)
+   ========================================================= */
+
+/* Reduce overall vertical padding of top footer */
+.footer-grid{
+  padding:3rem 1.5rem 2rem; /* was 4rem 1.5rem 3rem */
+}
+
+/* Tighten section headings */
+footer h4{
+  margin-bottom:6px; /* was ~10px */
+}
+
+/* Reduce list item spacing */
+.footer-links li,
+.footer-col li{
+  margin-bottom:5px; /* was ~8px */
+}
+
+/* Tighten spacing under lists */
+.footer-links{
+  margin-bottom:0;
+}
+
+/* Reduce column internal padding if present */
+.footer-col{
+  padding-bottom:0;
+}
+
+/* Trim space before bottom legal footer */
+footer{
+  padding-bottom:0;
+}
+
+/* If highlights are used above columns, tighten them */
+.footer-highlights{
+  margin-bottom:1.75rem; /* was ~2.5rem */
+}
+
+
+.panel-grid{
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  gap:80px;
+  align-items:center;
+}
+
+.panel-image{
+  display:flex;
+  justify-content:flex-end; /* HARD RIGHT */
+}
+
+.panel-image img{
+  max-width:560px;
+  width:100%;
+  border-radius:22px;
+  box-shadow:0 25px 55px rgba(0,0,0,.2);
+}
+
+
+@media(max-width:900px){
+  .panel-grid{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+
+  .panel-image{
+    justify-content:center;
+    margin-top:30px;
   }
 }
