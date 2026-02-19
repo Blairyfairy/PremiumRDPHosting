@@ -813,6 +813,6 @@ footer{
 
 .shift-right {
   position: relative;
-  right: -40px;
+  left: -40px;
 }
 
