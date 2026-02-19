@@ -479,9 +479,9 @@ footer p{
     margin-right:auto;
   }
 
-.panel-image{
-  margin-right:-50px;
-}
+  .panel-image img{
+    margin:40px auto 0;
+  }
 }
 
 .hero-cta{
