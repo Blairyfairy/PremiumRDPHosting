@@ -4,6 +4,12 @@
   box-sizing:border-box;
 }
 
+/* ================= GLOBAL IMAGE SAFETY RESET ================= */
+img{
+  max-width:100%;
+  height:auto;
+}
+
 :root{
   --bg:#ffffff;
   --text:#1e293b;
@@ -49,10 +55,16 @@ header{
   height:100%;
 }
 
+.logo-link{
+  display:flex;
+  align-items:center;
+  flex-shrink:0;
+}
+
 .logo{
+  height:48px;
   max-height:48px;
   width:auto;
-  object-fit:contain;
   display:block;
 }
 
