@@ -1,5 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+    /* ================= MOBILE MENU ================= */
+  const menuToggle = document.getElementById("menuToggle");
+  const navMenu = document.getElementById("navMenu");
+
+  if (menuToggle && navMenu) {
+    menuToggle.addEventListener("click", () => {
+      navMenu.classList.toggle("open");
+    });
+  }
   /* ================= HERO SLIDER ================= */
   const slides = document.querySelectorAll(".hero-slide");
   const hero = document.querySelector(".hero");
