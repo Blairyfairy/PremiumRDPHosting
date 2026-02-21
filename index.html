@@ -38,20 +38,35 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
 <header>
   <div class="container nav-container">
-    <img src="https://premiumrdp.com/wp-content/uploads/2018/06/premium_cheap_rdp.png" class="logo" alt="Premium RDP Logo">
+
+    <!-- LOGO (CLICKABLE) -->
+    <a href="/" class="logo-link">
+      <img
+        src="https://premiumrdp.com/wp-content/uploads/2018/06/premium_cheap_rdp.png"
+        class="logo"
+        alt="Premium RDP Logo"
+      >
+    </a>
+
+    <!-- MOBILE MENU BUTTON -->
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+      ☰
+    </button>
+
+    <!-- NAVIGATION -->
     <nav>
-      <ul>
-        <li>VPS</li>
-        <li>Cloud</li>
-        <li>Dedicated Servers</li>
-        <li>Company</li>
-        <li class="btn-nav">Client Area</li>
+      <ul id="navMenu">
+        <li><a href="/vps">VPS</a></li>
+        <li><a href="/cloud">Cloud</a></li>
+        <li><a href="/dedicated">Dedicated Servers</a></li>
+        <li><a href="/company">Company</a></li>
+        <li class="btn-nav"><a href="/client-area">Client Area</a></li>
         <li id="themeToggle" class="theme-toggle">🌙</li>
       </ul>
     </nav>
+
   </div>
 </header>
 
