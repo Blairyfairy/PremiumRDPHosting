@@ -862,27 +862,6 @@ nav ul li a{
 
 }
 
-/* ================= MOBILE MENU BUTTON ALIGN + BREATHING ROOM ================= */
-
-@media (max-width: 768px){
-
-  .nav-container{
-    justify-content: space-between;
-  }
-
-  .logo-link{
-    margin-right: auto;
-  }
-
-  .menu-toggle{
-    margin-left: auto;
-    padding-right: 12px;   /* breathing room from right edge */
-    padding-left: 12px;    /* balanced tap area */
-    font-size: 26px;
-    line-height: 1;
-  }
-
-}
 
 /* ================= MOBILE MENU — FLUSH RIGHT ================= */
 @media (max-width: 768px){
@@ -922,23 +901,5 @@ nav ul li a{
 
 }
 
-/* [FILE START — UNCHANGED ABOVE] */
-
-/* ================= MOBILE LOGO FIX ================= */
-
-@media (max-width: 768px){
-
-  .logo{
-    display:block;        /* FORCE image logo visible */
-    height:40px;          /* slightly smaller for mobile */
-    max-height:40px;
-  }
-
-  .logo-text{
-    display:none !important; /* never show text logo */
-  }
-
 }
-
-/* [FILE END — DO NOT ADD ANYTHING BELOW THIS LINE] */
 
