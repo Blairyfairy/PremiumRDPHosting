@@ -135,7 +135,15 @@ main{
     padding:16px;
     display:block;
   }
-
+/* === MOBILE LOGO IMAGE FIX (ISOLATED) === */
+@media (max-width:768px){
+  .logo{
+    display:block !important;
+    height:40px;
+    width:auto;
+    max-height:40px;
+  }
+}
   .logo{
     height:40px;
   }
