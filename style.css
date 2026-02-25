@@ -862,27 +862,6 @@ nav ul li a{
 
 }
 
-/* ================= MOBILE MENU BUTTON ALIGN + BREATHING ROOM ================= */
-
-@media (max-width: 768px){
-
-  .nav-container{
-    justify-content: space-between;
-  }
-
-  .logo-link{
-    margin-right: auto;
-  }
-
-  .menu-toggle{
-    margin-left: auto;
-    padding-right: 12px;   /* breathing room from right edge */
-    padding-left: 12px;    /* balanced tap area */
-    font-size: 26px;
-    line-height: 1;
-  }
-
-}
 
 /* ================= MOBILE MENU — FLUSH RIGHT ================= */
 @media (max-width: 768px){
