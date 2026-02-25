@@ -906,28 +906,20 @@ nav ul li a{
 
 }
 
-/* ================= MOBILE LOGO → TEXT SWITCH ================= */
+/* ================= MOBILE LOGO FIX ================= */
 
-/* Hide text logo by default (desktop) */
-.logo-text{
-  display:none;
-  font-size:20px;
-  font-weight:600;
-  letter-spacing:.3px;
-  color:var(--text);
-}
-
-/* Mobile behavior */
 @media (max-width: 768px){
 
-  /* Hide image logo */
   .logo{
-    display:none;
+    display:block;        /* FORCE image logo visible */
+    height:40px;          /* slightly smaller for mobile */
+    max-height:40px;
   }
 
-  /* Show text logo */
   .logo-text{
-    display:inline-block;
+    display:none !important; /* never show text logo */
   }
+
+}
 
 }
