@@ -68,6 +68,14 @@ header{
   display:block;
 }
 
+/* === LOGO HARD GUARANTEE (NO PATH CHANGES) === */
+.logo{
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  max-width: none;
+  object-fit: contain;
+}
 /* ================= NAV ================= */
 nav ul{
   display:flex;
@@ -888,17 +896,16 @@ nav ul li a{
 /* ================= MOBILE LOGO FIX ================= */
 
 @media (max-width: 768px){
-
   .logo{
-    display:block;        /* FORCE image logo visible */
-    height:40px;          /* slightly smaller for mobile */
-    max-height:40px;
+    height:40px;
+    width:auto;
+    max-height:none;
   }
 
   .logo-text{
-    display:none !important; /* never show text logo */
+    display:none !important;
   }
-
 }
+
 
 
