@@ -931,3 +931,16 @@ nav ul li a{
   }
 
 }
+
+@media (max-width: 768px){
+  .logo-link{
+    display:flex;
+    align-items:center;
+  }
+
+  .logo{
+    display:block !important;
+    height:40px;
+    max-height:40px;
+  }
+}
