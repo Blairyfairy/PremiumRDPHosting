@@ -920,11 +920,6 @@ nav ul li a{
 /* Mobile behavior */
 @media (max-width: 768px){
 
-  /* Hide image logo */
-  .logo{
-    display:none;
-  }
-
   /* Show text logo */
   .logo-text{
     display:inline-block;
@@ -944,3 +939,16 @@ nav ul li a{
     max-height:40px;
   }
 }
+/* ================= MOBILE LOGO — FORCE IMAGE ================= */
+@media (max-width: 768px){
+  .logo{
+    display:block !important;
+    height:40px;
+    max-height:40px;
+    width:auto;
+  }
+}
+
+
+
+
