@@ -544,6 +544,14 @@ footer > *,
   background:transparent !important;
 }
 
+.footer-brand{
+  text-align:center;
+}
+
+.footer-brand .logo-link{
+  display:inline-block;
+}
+
 /* ---------- FOOTER GRID (UNCHANGED STRUCTURE, JUST STABLE) ---------- */
 .footer-grid{
   max-width:1200px;
