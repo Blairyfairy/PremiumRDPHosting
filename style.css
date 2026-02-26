@@ -916,4 +916,27 @@ nav ul li a{
 }
 
 
+/* ================= FOOTER BRAND — MOBILE CENTER FIX ================= */
+@media (max-width: 768px){
 
+  .footer-brand{
+    text-align: center;
+  }
+
+  .footer-brand .logo-link{
+    display: block;          /* critical */
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-brand h3{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-brand p{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
