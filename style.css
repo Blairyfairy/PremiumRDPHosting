@@ -1093,3 +1093,25 @@ footer a:focus,
 }
 
 
+/* =========================
+   EASY ADD-ON FIXES
+   ========================= */
+
+/* Footer highlights — pill style */
+.footer-highlights li {
+  padding: 12px 20px !important;
+  border-radius: 50px !important;
+  background: rgba(255,255,255,0.06) !important;
+  margin: 5px 0 !important;
+}
+
+/* Control & Flexibility summary points — pill style */
+.control-flexibility-section .summary-points span {
+  background: rgba(255,255,255,0.1) !important;
+  border-radius: 50px !important;
+  padding: 14px 28px !important;
+  display: inline-block !important;
+  margin: 5px !important;
+  color: #e6edff !important;
+}
+
