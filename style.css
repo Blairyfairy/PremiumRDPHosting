@@ -1008,3 +1008,66 @@ footer a:hover,
 }
 
 
+/* =========================
+   FORCE FOOTER NAVY OVERRIDE
+   ========================= */
+footer,
+footer *,
+.footer-grid,
+.footer-grid *,
+.footer-col,
+.footer-col *,
+.footer-brand,
+.footer-brand *,
+.footer-highlights,
+.footer-highlights *,
+.footer-legal,
+.footer-legal * {
+    background-color: #061a3a !important; /* dark blue/navy */
+    color: #cbd5e1 !important;           /* default light text */
+}
+
+/* Links */
+footer a,
+footer a *,
+.footer-links a,
+.footer-links a *,
+.icon-links a,
+.icon-links a * {
+    color: #9fb9ff !important;
+}
+
+footer a:hover,
+footer a:focus,
+.footer-links a:hover,
+.icon-links a:hover {
+    color: #e6f0ff !important;
+}
+
+/* Footer highlights forced background and text */
+.footer-highlights,
+.footer-highlights ul,
+.footer-highlights li {
+    background: rgba(255,255,255,0.06) !important;
+    color: #e6edff !important;
+}
+
+/* Payment icons container background */
+.payment-icons,
+.payment-icons * {
+    background: transparent !important;
+    color: inherit !important;
+}
+
+/* Footer brand text */
+.footer-brand h3,
+.footer-brand p {
+    color: #ffffff !important;
+}
+
+/* Footer legal strip */
+.footer-legal {
+    background-color: #061a3a !important;
+    color: #9fb9ff !important;
+}
+
