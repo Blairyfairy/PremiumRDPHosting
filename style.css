@@ -1071,3 +1071,25 @@ footer a:focus,
     color: #9fb9ff !important;
 }
 
+/* ================= FORCE FULL-WIDTH NAVY FOR CONTROL & FLEXIBILITY AREA ================= */
+.control-flexibility-section {
+  width: 100vw !important;
+  margin-left: calc(50% - 50vw) !important;
+  margin-right: calc(50% - 50vw) !important;
+  background-color: #061a3a !important;
+  color: #cbd5e1 !important;
+  padding: 80px 20px !important; /* adjust spacing if needed */
+}
+
+.control-flexibility-section .summary-points,
+.control-flexibility-section .summary-points span,
+.control-flexibility-section .panel-card,
+.control-flexibility-section .panel-section,
+.control-flexibility-section .panel-grid {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  color: inherit !important;
+}
+
+
