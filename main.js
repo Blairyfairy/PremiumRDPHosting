@@ -162,3 +162,23 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+/* ================= FORCE FULL-WIDTH NAVY FOR CONTROL & FLEXIBILITY ================= */
+const controlArea = document.querySelector(".control-flexibility-section");
+if (controlArea) {
+  // Make the section full-width
+  controlArea.style.setProperty("width", "100vw", "important");
+  controlArea.style.setProperty("margin-left", "calc(50% - 50vw)", "important");
+  controlArea.style.setProperty("margin-right", "calc(50% - 50vw)", "important");
+  controlArea.style.setProperty("background-color", "#061a3a", "important");
+  controlArea.style.setProperty("color", "#cbd5e1", "important");
+  
+  // Remove white backgrounds, shadows, and rounded corners from children
+  controlArea.querySelectorAll("*").forEach(el => {
+    el.style.setProperty("background-color", "transparent", "important");
+    el.style.setProperty("box-shadow", "none", "important");
+    el.style.setProperty("border-radius", "0", "important");
+    el.style.setProperty("color", "inherit", "important");
+  });
+}
+
+
