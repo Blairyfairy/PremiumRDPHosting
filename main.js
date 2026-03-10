@@ -119,3 +119,46 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
 });
+
+/* ================= FORCE FOOTER NAVY BACKGROUND ================= */
+const forceFooterBlue = () => {
+  const footer = document.querySelector("footer");
+  if (!footer) return;
+
+  // Force the main footer background
+  footer.style.setProperty("background-color", "#061a3a", "important");
+  footer.style.setProperty("color", "#cbd5e1", "important");
+
+  // Force all children
+  footer.querySelectorAll("*").forEach(el => {
+    el.style.setProperty("background-color", "inherit", "important");
+    el.style.setProperty("color", "inherit", "important");
+  });
+
+  // Footer highlights specific
+  const highlights = footer.querySelectorAll(".footer-highlights, .footer-highlights ul, .footer-highlights li");
+  highlights.forEach(el => {
+    el.style.setProperty("background", "rgba(255,255,255,0.06)", "important");
+    el.style.setProperty("color", "#e6edff", "important");
+  });
+
+  // Footer links
+  const links = footer.querySelectorAll("a, a *");
+  links.forEach(a => {
+    a.style.setProperty("color", "#9fb9ff", "important");
+  });
+
+  // Footer legal strip
+  const legal = footer.querySelector(".footer-legal");
+  if (legal) {
+    legal.style.setProperty("background-color", "#061a3a", "important");
+    legal.style.setProperty("color", "#9fb9ff", "important");
+  }
+};
+
+// Run after DOM is loaded
+document.addEventListener("DOMContentLoaded", () => {
+  forceFooterBlue();
+});
+
+
