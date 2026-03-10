@@ -103,4 +103,19 @@ document.addEventListener("DOMContentLoaded", () => {
     testimonials[t].classList.add("active");
   }, 6500);
 
- 
+  /* ================= THEME TOGGLE ================= */
+  const toggle = document.getElementById("themeToggle");
+
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark");
+    toggle.textContent = "☀️";
+  }
+
+  toggle.onclick = () => {
+    document.body.classList.toggle("dark");
+    const dark = document.body.classList.contains("dark");
+    localStorage.setItem("theme", dark ? "dark" : "light");
+    toggle.textContent = dark ? "☀️" : "🌙";
+  };
+
+});
