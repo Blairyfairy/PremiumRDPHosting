@@ -92,10 +92,6 @@ nav ul{
   transition:.3s;
 }
 
-.theme-toggle{
-  cursor:pointer;
-}
-
 /* ================= HERO ================= */
 .hero{
   height:calc(100vh - 80px);
