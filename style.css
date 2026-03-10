@@ -952,3 +952,59 @@ nav ul li a{
 .footer-highlights li{
   color:#e6edff !important;
 }
+
+/* ================= FORCED FOOTER NAVY OVERRIDE ================= */
+
+/* Top footer grid and bottom legal footer */
+footer,
+footer > *,
+.footer-legal,
+.footer-legal > * {
+    background-color: #061a3a !important; /* match top footer navy */
+    color: #cbd5e1 !important;            /* default text color */
+}
+
+/* Dark mode support */
+body.dark footer,
+body.dark footer > *,
+body.dark .footer-legal,
+body.dark .footer-legal > * {
+    background-color: #020617 !important; /* dark navy/blackish */
+    color: #e5e7eb !important;            /* light text for dark mode */
+}
+
+/* Footer links and highlights forced colors */
+footer a,
+footer a:visited,
+footer a:hover,
+footer a:focus,
+footer a:active,
+.footer-links a,
+.icon-links a,
+.footer-highlights li {
+    color: #9fb9ff !important;
+}
+
+/* Hover tweaks for links in footer */
+footer a:hover,
+.icon-links a:hover,
+.footer-links a:hover {
+    color: #e6f0ff !important;
+}
+
+/* Footer highlights background forced */
+.footer-highlights,
+.footer-highlights ul {
+    background: rgba(255,255,255,0.06) !important;
+}
+
+/* Payment icons text forced color */
+.payment-icons text {
+    fill: #9fb9ff !important;
+}
+
+.payment-icons svg:hover text {
+    fill: #e6f0ff !important;
+}
+
+
