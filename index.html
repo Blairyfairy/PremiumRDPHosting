@@ -24,7 +24,7 @@
 <li><a href="#dedicated">Dedicated</a></li>
 <li><a href="#company">Company</a></li>
 <li class="btn-nav"><a href="/client-area">Client Area</a></li>
-<li class="btn-nav"><a href="/contact.html">Contact</a></li>
+<li class="btn-nav"><a href="contact.html">Contact</a></li>
 </ul>
 </nav>
 </div>
@@ -40,7 +40,7 @@
 <p>High-performance Remote Desktop solutions built for professionals who require speed, <br>security, and consistent uptime across demanding workloads and critical business environments worldwide.</p>
 <div class="hero-cta">
 <a class="price-btn" href="#plans">View Plans</a>
-<a class="price-btn" href="/contact.html">Contact Support</a>
+<a class="price-btn" href="contact.html">Contact Support</a>
 </div>
 </div>
 </div>
@@ -52,7 +52,7 @@
 <p>Your RDP environment is deployed in minutes and monitored continuously. Our support <br> team operates around the clock to ensure performance, reliability, and uninterrupted access whenever you need it.</p>
 <div class="hero-cta">
 <a class="price-btn" href="#plans">View Plans</a>
-<a class="price-btn" href="/contact.html">Contact Support</a>
+<a class="price-btn" href="contact.html">Contact Support</a>
 </div>
 </div>
 </div>
@@ -64,7 +64,7 @@
 <p>Optimized RDP solutions designed for traders, remote professionals, developers, <br> and streamers who need low latency, stable connections, and secure access from anywhere in the world.</p>
 <div class="hero-cta">
 <a class="price-btn" href="#plans">View Plans</a>
-<a class="price-btn" href="/contact.html">Contact Support</a>
+<a class="price-btn" href="contact.html">Contact Support</a>
 </div>
 </div>
 </div>
@@ -76,7 +76,7 @@
 <p>The most technologically advanced products tailored for your business, delivering performance, <br> stability, and dependable customer-focused infrastructure at competitive pricing.</p>
 <div class="hero-cta">
 <a class="price-btn" href="#plans">View Plans</a>
-<a class="price-btn" href="/contact.html">Contact Support</a>
+<a class="price-btn" href="contact.html">Contact Support</a>
 </div>
 </div>
 </div>
@@ -88,41 +88,42 @@
 <p>Our infrastructure is monitored 24/7 and never oversold, ensuring consistent performance, <br> predictable speeds, and reliable hosting for mission-critical workloads.</p>
 <div class="hero-cta">
 <a class="price-btn" href="#plans">View Plans</a>
-<a class="price-btn" href="/contact.html">Contact Support</a>
+<a class="price-btn" href="contact.html">Contact Support</a>
 </div>
 </div>
 </div>
 
 </section>
 
-<section class="section light">
+<section class="section light" id="plans">
   <div class="container">
     <h2 class="center">Pricing & Offers</h2>
     <div class="pricing-grid">
       <div class="pricing-card">
         <h3>Cloud VPS</h3>
         <p>High performance SSD VPS hosting</p>
-        <a class="price-btn">View Plans</a>
+        <a class="price-btn" href="#cloud">View Plans</a>
       </div>
       <div class="pricing-card featured">
         <h3>Popular VPS</h3>
         <p>Best value configuration</p>
-        <a class="price-btn">Get Started</a>
+        <a class="price-btn" href="#vps">Get Started</a>
       </div>
       <div class="pricing-card">
         <h3>Dedicated Servers</h3>
         <p>Enterprise bare metal servers</p>
-        <a class="price-btn">Explore</a>
+        <a class="price-btn" href="#dedicated">Explore</a>
       </div>
       <div class="pricing-card">
         <h3>Partner Program</h3>
         <p>Reseller & partner solutions</p>
-        <a class="price-btn">Join Now</a>
+        <a class="price-btn" href="#company">Join Now</a>
       </div>
     </div>
   </div>
 </section>
-    <!-- WHY PREMIUM + PRICING TIERS + CENTERED SUMMARY -->
+
+<!-- WHY PREMIUM + FEATURES + TIERS + CENTERED SUMMARY -->
 <section class="section premium-why">
   <div class="container">
 
@@ -267,7 +268,7 @@
   </div>
 </section>
 
-
+<!-- TESTIMONIALS -->
 <section class="section">
   <div class="container center">
     <h2>Customer Reviews</h2>
@@ -291,7 +292,7 @@
   </div>
 </section>
 
-    <!-- Company / About -->
+<!-- Company / About -->
 <footer class="site-footer">
 <div class="footer-top">
   <div class="footer-top-inner">
@@ -320,9 +321,9 @@
     <section class="footer-col">
       <h4>Quick Links</h4>
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/plans">Plans</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li><a href="#hero1">Home</a></li>
+        <li><a href="#plans">Plans</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </section>
 
@@ -330,9 +331,9 @@
     <section class="footer-col">
       <h4>Our Services</h4>
       <ul>
-        <li><a href="/plans/windows-rdp">Windows RDP</a></li>
-        <li><a href="/plans/forex-rdp">Forex RDP</a></li>
-        <li><a href="/plans/gpu-rdp">GPU RDP</a></li>
+        <li><a href="#vps">Windows RDP</a></li>
+        <li><a href="#cloud">Forex RDP</a></li>
+        <li><a href="#dedicated">GPU RDP</a></li>
       </ul>
     </section>
 
@@ -360,7 +361,7 @@
         </li>
 
         <li>
-          <a href="/support">
+          <a href="contact.html">
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M4 4h16v4a2 2 0 010 4v4H4v-4a2 2 0 010-4V4z"/>
             </svg>
@@ -380,129 +381,21 @@
           <text x="0" y="14" font-size="14" font-weight="700">VISA</text>
         </svg>
 
-        <svg viewBox="0 0 48 16" aria-label="Mastercard">
-          <circle cx="18" cy="8" r="7"/>
-          <circle cx="30" cy="8" r="7" opacity="0.6"/>
+        <svg viewBox="0 0 48 16" aria-label="MasterCard">
+          <text x="0" y="14" font-size="14" font-weight="700">MasterCard</text>
         </svg>
 
         <svg viewBox="0 0 48 16" aria-label="PayPal">
           <text x="0" y="14" font-size="14" font-weight="700">PayPal</text>
         </svg>
 
-        <svg viewBox="0 0 24 24" aria-label="Crypto">
-          <circle cx="12" cy="12" r="10"/>
-          <path d="M8 12h8M12 8v8" stroke="#0f172a" stroke-width="2"/>
-        </svg>
-
       </div>
     </section>
 
   </div>
+
+  <p class="footer-legal">©2026 PremiumRDP. All rights reserved.</p>
 </footer>
-
-
-  <div class="container footer-grid">
-
-
-    <div class="footer-highlights">
-      <ul>
-        <li><strong>Control & Flexibility</strong> when your business needs it most</li>
-        <li><strong>195+</strong> Global Locations</li>
-        <li>Serving from <strong>750+</strong> Datacenters Worldwide</li>
-      </ul>
-    </div>
-
-<div>
-  <h4>VPS By Country</h4>
-  <ul class="footer-links">
-    <li><a href="#">🇬🇧 VPS In United Kingdom</a></li>
-    <li><a href="#">🇺🇸 VPS In United States</a></li>
-    <li><a href="#">🇳🇱 VPS In Netherland</a></li>
-    <li><a href="#">🇲🇾 VPS In Malaysia</a></li>
-    <li><a href="#">🇷🇴 VPS In Romania</a></li>
-    <li><a href="#">🇷🇺 VPS In Russia</a></li>
-    <li><a href="#">🇩🇪 VPS In Germany</a></li>
-    <li><a href="#">🇦🇺 VPS In Australia</a></li>
-    <li><a href="#">🇫🇮 VPS In Finland</a></li>
-    <li><a href="#">🇸🇬 VPS In Singapore</a></li>
-    <li><a href="#">🇨🇦 VPS In Canada</a></li>
-    <li><a href="#">🇨🇳 VPS In China</a></li>
-    <li><a href="#">🇫🇷 VPS In France</a></li>
-    <li><a href="#">🇮🇱 VPS In Israel</a></li>
-  </ul>
-</div>
-
-<div>
-  <h4>VPS By City Location</h4>
-  <ul class="footer-links">
-    <li><a href="#">🇬🇧 VPS In London UK</a></li>
-    <li><a href="#">🇬🇧 VPS In Wolverhampton</a></li>
-    <li><a href="#">🇺🇸 VPS In Texas US</a></li>
-    <li><a href="#">🇺🇸 VPS In Ridgewood US</a></li>
-    <li><a href="#">🇺🇸 VPS In Bend Oregon</a></li>
-    <li><a href="#">🇺🇸 VPS In Somerville Massachusetts</a></li>
-    <li><a href="#">🇺🇸 VPS In Boston Massachusetts</a></li>
-    <li><a href="#">🇺🇸 VPS In Buffalo New York</a></li>
-    <li><a href="#">🇺🇸 VPS In Chinchilla Pennsylvania</a></li>
-    <li><a href="#">🇺🇸 VPS In Jacksonville Florida</a></li>
-    <li><a href="#">🇺🇸 VPS In Denver Colorado</a></li>
-    <li><a href="#">🇺🇸 VPS In Los Angeles California</a></li>
-    <li><a href="#">🇺🇸 VPS In Chicago Illinois</a></li>
-    <li><a href="#">🇺🇸 VPS In Walnut California</a></li>
-  </ul>
-</div>
-
-<div>
-  <h4>Premium RDP Reviews</h4>
-  <ul class="footer-links">
-    <li><a href="#">🇳🇱 VPS In Noord Holland Netherland</a></li>
-    <li><a href="#">🇳🇱 VPS In Amsterdam Netherland</a></li>
-    <li><a href="#">🇲🇾 VPS In Cyberjaya Selangor Malaysia</a></li>
-    <li><a href="#">🇷🇺 VPS In Moscow Russia</a></li>
-    <li><a href="#">🇦🇺 VPS In New South Wales Australia</a></li>
-    <li><a href="#">🇨🇦 VPS In Toronto Ontario Canada</a></li>
-    <li><a href="#">🇮🇱 VPS In Jerusalem Israel</a></li>
-    <li><a href="#">🇭🇰 VPS In Hong Kong China</a></li>
-    <li><a href="#">🇲🇩 VPS In Chisinau Moldova</a></li>
-    <li><a href="#">🇮🇱 VPS In Petach Tikva Israel</a></li>
-    <li><a href="#">🇫🇮 VPS In Uusimaa Finland</a></li>
-    <li><a href="#">🇮🇱 VPS In Tel Aviv Israel</a></li>
-    <li><a href="#">🇺🇸 VPS In Ashburn Virginia US</a></li>
-    <li><a href="#">🇩🇪 VPS In Bavaria Germany</a></li>
-  </ul>
-</div>
-
-<div class="footer-partner">
-  <h4>About</h4>
-  <ul class="footer-links">
-    <li><a href="#">Promotions & Discounts</a></li>
-    <li><a href="#">Global Datacenters</a></li>
-    <li><a href="#">Legal Informations</a></li>
-    <li><a href="#">Use VPS on Mac</a></li>
-    <li><a href="#">Use VPS On Android</a></li>
-    <li><a href="#">Use VPS On iOS Apple</a></li>
-    <li><a href="#">Use VPS On Windows PC</a></li>
-    <li><a href="/faq">FAQ</a></li>
-    <li><a href="/terms">Terms</a></li>
-    <li><a href="/privacy">Privacy</a></li>
-      <p>
-        LIVE CHAT<br>
-        Phone:+44-13-9234-1917<br>
-        Email: <a href="mailto:sales@premiumrdp.com">sales@premiumrdp.com</a>
-      </p>
-  </ul>
-</div>
-
-    </div>
-
-  </div>
-
-  <p class="footer-legal">
-    ©2021 All Rights reserved. Developed by Premium Technoloies<br>
-    Company No : 11517846 · VAT No: GB 302938120 · LEI No: 9845007FQ39697EFTA47 · D-U-N-S No: 224302384
-  </p>
-</footer>
-
 
 <script src="main.js"></script>
 </body>
