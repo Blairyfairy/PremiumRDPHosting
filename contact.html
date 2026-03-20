@@ -23,8 +23,9 @@
         <li><a href="index.html#cloud">Cloud</a></li>
         <li><a href="index.html#dedicated">Dedicated</a></li>
         <li><a href="index.html#company">Company</a></li>
+        <!-- Top menu Contact button matches index.html exactly -->
         <li class="btn-nav">
-          <a href="contact.html" style="background-color:#1e40af; color:#fff; border-radius:30px; padding:10px 24px; font-weight:600; text-decoration:none;">
+          <a href="contact.html" class="nav-btn" style="background-color:#1e40af; color:#fff; border-radius:30px; padding:10px 24px; font-weight:600; text-decoration:none;">
             Contact
           </a>
         </li>
@@ -59,6 +60,7 @@
     <input type="text" placeholder="Your Name" required>
     <input type="email" placeholder="Your Email" required>
     <textarea placeholder="Your Message" rows="5" required></textarea>
+    <!-- Button under form now dark navy -->
     <button type="submit" class="price-btn" style="background-color:#1e40af; color:#fff; border-radius:30px; padding:12px 24px; font-weight:600; border:none; cursor:pointer;">Send Message</button>
   </form>
 </main>
@@ -163,7 +165,6 @@
 
   </div>
 
-  <!-- Footer Highlights & VPS by Country/City/Reviews -->
   <div class="container footer-grid">
 
     <div class="footer-highlights">
@@ -284,10 +285,4 @@ function initMap() {
     title: "Premium RDP HQ"
   });
   const infoWindow = new google.maps.InfoWindow({
-    content: `<div style="font-size:14px;"><strong>Premium RDP HQ</strong><br>Unit 29 Highcroft Industrial Estate, Enterprise Road, Horndean, Waterlooville, Hampshire, United Kingdom, PO8 0BT<br>Email: info@premiumrdp.com</div>`
-  });
-  marker.addListener("click", () => infoWindow.open(map, marker));
-}
-</script>
-</body>
-</html>
+    content: `<div style="font-size:14px;"><strong>Premium RDP HQ</strong><br>Unit 29 Highcroft Industrial Estate, Enterprise Road, Horndean, Waterlooville
