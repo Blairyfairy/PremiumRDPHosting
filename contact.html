@@ -285,4 +285,11 @@ function initMap() {
     title: "Premium RDP HQ"
   });
   const infoWindow = new google.maps.InfoWindow({
-    content: `<div style="font-size:14px;"><strong>Premium RDP HQ</strong><br>Unit 29 Highcroft Industrial Estate, Enterprise Road, Horndean, Waterlooville
+    content: `<div style="font-size:14px;"><strong>Premium RDP HQ</strong><br>Unit 29 Highcroft Industrial Estate, Enterprise Road, Horndean, Waterlooville, Hampshire, United Kingdom, PO8 0BT</div>`
+  });
+  marker.addListener('click', () => infoWindow.open(map, marker));
+}
+</script>
+
+</body>
+</html>
