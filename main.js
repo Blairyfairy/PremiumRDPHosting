@@ -1,6 +1,7 @@
+/* ================= MAIN.JS — FULL VERSION ================= */
 document.addEventListener("DOMContentLoaded", () => {
 
-    /* ================= MOBILE MENU ================= */
+  /* ================= MOBILE MENU ================= */
   const menuToggle = document.getElementById("menuToggle");
   const navMenu = document.getElementById("navMenu");
 
@@ -9,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
       navMenu.classList.toggle("open");
     });
   }
+
   /* ================= HERO SLIDER ================= */
   const slides = document.querySelectorAll(".hero-slide");
   const hero = document.querySelector(".hero");
@@ -118,6 +120,35 @@ document.addEventListener("DOMContentLoaded", () => {
     toggle.textContent = dark ? "☀️" : "🌙";
   };
 
+  /* ================= SCROLL-TO-TOP BUTTON ================= */
+  const scrollBtn = document.createElement("button");
+  scrollBtn.className = "scroll-to-top";
+  scrollBtn.setAttribute("aria-label", "Scroll to top");
+
+  // Double chevron SVG
+  scrollBtn.innerHTML = `
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="6 15 12 9 18 15"/>
+      <polyline points="6 9 12 3 18 9"/>
+    </svg>
+  `;
+
+  document.body.appendChild(scrollBtn);
+
+  // Show/hide button on scroll
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      scrollBtn.classList.add("visible");
+    } else {
+      scrollBtn.classList.remove("visible");
+    }
+  });
+
+  // Smooth scroll to top
+  scrollBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
 });
 
 /* ================= FORCE FOOTER NAVY BACKGROUND ================= */
@@ -159,27 +190,4 @@ const forceFooterBlue = () => {
 // Run after DOM is loaded
 document.addEventListener("DOMContentLoaded", () => {
   forceFooterBlue();
-});
-
-/* ================= SCROLL-TO-TOP BUTTON ================= */
-const scrollBtn = document.createElement("button");
-scrollBtn.className = "scroll-to-top";
-scrollBtn.innerHTML = "⏫"; // double chevron (up)
-document.body.appendChild(scrollBtn);
-
-// Show/hide on scroll
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 300) {
-    scrollBtn.classList.add("visible");
-  } else {
-    scrollBtn.classList.remove("visible");
-  }
-});
-
-// Smooth scroll to top on click
-scrollBtn.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
 });
