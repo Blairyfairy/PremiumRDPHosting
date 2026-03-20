@@ -979,3 +979,8 @@ nav ul li a{
     right: 20px;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
