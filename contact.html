@@ -7,9 +7,16 @@
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
+/* Global buttons/nav */
+button, .btn-nav a, .contact-form button {
+    background-color: #1e3a8a !important;
+    color: #fff !important;
+    border-radius: 30px !important;
+}
+
 /* Hero section */
 .hero-contact {
-    background-color: #1e3a8a; /* exact dark navy blue from index.html button */
+    background-color: #1e3a8a;
     color: #fff;
     text-align: center;
     padding: 80px 20px;
@@ -44,27 +51,13 @@
 }
 
 .contact-form button {
-    background-color: #1e3a8a; /* exact navy blue */
-    color: #fff;
     padding: 14px 30px;
-    border: none;
-    border-radius: 30px;
-    font-size: 1rem;
     cursor: pointer;
 }
 
-/* Remove any duplicate blue rectangles */
+/* Remove extra blue rectangles */
 .no-extra-blue {
     background-color: transparent !important;
-}
-
-/* Top menu button */
-nav ul li.btn-nav a {
-    background-color: #1e3a8a !important;
-    color: #fff !important;
-    border-radius: 30px !important;
-    padding: 10px 25px !important;
-    text-decoration: none !important;
 }
 </style>
 </head>
@@ -90,25 +83,25 @@ nav ul li.btn-nav a {
 </header>
 
 <!-- HERO CONTACT -->
-<section class="hero-contact">
-    <h1>Contact Premium Technologies</h1>
-    <p>Have questions or need support? Reach out to us using the form below or via our contact details.</p>
+<section class="hero-contact" id="hero1">
+<h1>Contact Premium Technologies</h1>
+<p>Have questions or need support? Reach out to us using the form below or via our contact details.</p>
 </section>
 
 <!-- CONTACT FORM -->
 <section class="section">
 <div class="container">
 <form class="contact-form">
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" placeholder="Your Name">
+<label for="name">Name</label>
+<input type="text" id="name" name="name" placeholder="Your Name">
 
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" placeholder="you@example.com">
+<label for="email">Email</label>
+<input type="email" id="email" name="email" placeholder="you@example.com">
 
-    <label for="message">Message</label>
-    <textarea id="message" name="message" rows="6" placeholder="Write your message here"></textarea>
+<label for="message">Message</label>
+<textarea id="message" name="message" rows="6" placeholder="Write your message here"></textarea>
 
-    <button type="submit">Send Message</button>
+<button type="submit">Send Message</button>
 </form>
 </div>
 </section>
@@ -126,17 +119,17 @@ Unit 29 Highcroft Industrial Estate, Enterprise Road, Horndean, Waterlooville, H
 <!-- FOOTER -->
 <footer class="site-footer">
 <div class="footer-top">
-  <div class="footer-top-inner">
-    <div class="footer-brand">
-      <a href="/PremiumRDPHosting/" class="logo-link">
-        <h3>PremiumRDP</h3>
-      </a>
-      <p>
-        PremiumRDP delivers fast, secure, and reliable Remote Desktop solutions
-        optimized for trading, remote work, automation, and high-performance computing.
-      </p>
-    </div>
-  </div>
+<div class="footer-top-inner">
+<div class="footer-brand">
+<a href="/PremiumRDPHosting/" class="logo-link">
+<h3>PremiumRDP</h3>
+</a>
+<p>
+PremiumRDP delivers fast, secure, and reliable Remote Desktop solutions
+optimized for trading, remote work, automation, and high-performance computing.
+</p>
+</div>
+</div>
 </div>
 
 <div class="footer-grid footer-columns">
@@ -202,11 +195,93 @@ Unit 29 Highcroft Industrial Estate, Enterprise Road, Horndean, Waterlooville, H
 <li>Serving from <strong>750+</strong> Datacenters Worldwide</li>
 </ul>
 </div>
+
+<div>
+<h4>VPS By Country</h4>
+<ul class="footer-links">
+<li><a href="#">🇬🇧 VPS In United Kingdom</a></li>
+<li><a href="#">🇺🇸 VPS In United States</a></li>
+<li><a href="#">🇳🇱 VPS In Netherland</a></li>
+<li><a href="#">🇲🇾 VPS In Malaysia</a></li>
+<li><a href="#">🇷🇴 VPS In Romania</a></li>
+<li><a href="#">🇷🇺 VPS In Russia</a></li>
+<li><a href="#">🇩🇪 VPS In Germany</a></li>
+<li><a href="#">🇦🇺 VPS In Australia</a></li>
+<li><a href="#">🇫🇮 VPS In Finland</a></li>
+<li><a href="#">🇸🇬 VPS In Singapore</a></li>
+<li><a href="#">🇨🇦 VPS In Canada</a></li>
+<li><a href="#">🇨🇳 VPS In China</a></li>
+<li><a href="#">🇫🇷 VPS In France</a></li>
+<li><a href="#">🇮🇱 VPS In Israel</a></li>
+</ul>
+</div>
+
+<div>
+<h4>VPS By City Location</h4>
+<ul class="footer-links">
+<li><a href="#">🇬🇧 VPS In London UK</a></li>
+<li><a href="#">🇬🇧 VPS In Wolverhampton</a></li>
+<li><a href="#">🇺🇸 VPS In Texas US</a></li>
+<li><a href="#">🇺🇸 VPS In Ridgewood US</a></li>
+<li><a href="#">🇺🇸 VPS In Bend Oregon</a></li>
+<li><a href="#">🇺🇸 VPS In Somerville Massachusetts</a></li>
+<li><a href="#">🇺🇸 VPS In Boston Massachusetts</a></li>
+<li><a href="#">🇺🇸 VPS In Buffalo New York</a></li>
+<li><a href="#">🇺🇸 VPS In Chinchilla Pennsylvania</a></li>
+<li><a href="#">🇺🇸 VPS In Jacksonville Florida</a></li>
+<li><a href="#">🇺🇸 VPS In Denver Colorado</a></li>
+<li><a href="#">🇺🇸 VPS In Los Angeles California</a></li>
+<li><a href="#">🇺🇸 VPS In Chicago Illinois</a></li>
+<li><a href="#">🇺🇸 VPS In Walnut California</a></li>
+</ul>
+</div>
+
+<div>
+<h4>Premium RDP Reviews</h4>
+<ul class="footer-links">
+<li><a href="#">🇳🇱 VPS In Noord Holland Netherland</a></li>
+<li><a href="#">🇳🇱 VPS In Amsterdam Netherland</a></li>
+<li><a href="#">🇲🇾 VPS In Cyberjaya Selangor Malaysia</a></li>
+<li><a href="#">🇷🇺 VPS In Moscow Russia</a></li>
+<li><a href="#">🇦🇺 VPS In New South Wales Australia</a></li>
+<li><a href="#">🇨🇦 VPS In Toronto Ontario Canada</a></li>
+<li><a href="#">🇮🇱 VPS In Jerusalem Israel</a></li>
+<li><a href="#">🇭🇰 VPS In Hong Kong China</a></li>
+<li><a href="#">🇲🇩 VPS In Chisinau Moldova</a></li>
+<li><a href="#">🇮🇱 VPS In Petach Tikva Israel</a></li>
+<li><a href="#">🇫🇮 VPS In Uusimaa Finland</a></li>
+<li><a href="#">🇮🇱 VPS In Tel Aviv Israel</a></li>
+<li><a href="#">🇺🇸 VPS In Ashburn Virginia US</a></li>
+<li><a href="#">🇩🇪 VPS In Bavaria Germany</a></li>
+</ul>
+</div>
+
+<div class="footer-partner">
+<h4>About</h4>
+<ul class="footer-links">
+<li><a href="#">Promotions & Discounts</a></li>
+<li><a href="#">Global Datacenters</a></li>
+<li><a href="#">Legal Informations</a></li>
+<li><a href="#">Use VPS on Mac</a></li>
+<li><a href="#">Use VPS On Android</a></li>
+<li><a href="#">Use VPS On iOS Apple</a></li>
+<li><a href="#">Use VPS On Windows PC</a></li>
+<li><a href="/faq">FAQ</a></li>
+<li><a href="/terms">Terms</a></li>
+<li><a href="/privacy">Privacy</a></li>
+<p>
+LIVE CHAT<br>
+Phone:+44-13-9234-1917<br>
+Email: <a href="mailto:sales@premiumrdp.com">sales@premiumrdp.com</a>
+</p>
+</ul>
+</div>
+
 </div>
 
 <p class="footer-legal">
 ©2021 All Rights reserved. Developed by Premium Technologies<br>
-Company No: 11517846 · VAT No: GB 302938120 · LEI No: 9845007FQ39697EFTA47 · D-U-N-S No: 224302384
+Company No : 11517846 · VAT No: GB 302938120 · LEI No: 9845007FQ39697EFTA47 · D-U-N-S No: 224302384
 </p>
 </footer>
 
