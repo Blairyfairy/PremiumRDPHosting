@@ -161,4 +161,25 @@ document.addEventListener("DOMContentLoaded", () => {
   forceFooterBlue();
 });
 
+/* ================= SCROLL-TO-TOP BUTTON ================= */
+const scrollBtn = document.createElement("button");
+scrollBtn.className = "scroll-to-top";
+scrollBtn.innerHTML = "⏫"; // double chevron (up)
+document.body.appendChild(scrollBtn);
 
+// Show/hide on scroll
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    scrollBtn.classList.add("visible");
+  } else {
+    scrollBtn.classList.remove("visible");
+  }
+});
+
+// Smooth scroll to top on click
+scrollBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
