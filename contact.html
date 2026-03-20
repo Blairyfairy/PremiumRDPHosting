@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<!-- HEADER (matches index.html menu style) -->
+<!-- HEADER (index.html menu style) -->
 <header>
   <div class="container nav-container">
     <a href="index.html" class="logo-link" aria-label="Premium RDP Home">
@@ -29,28 +29,28 @@
   </div>
 </header>
 
-<!-- HERO / TOP CONTACT AREA (clean solid background, centered text) -->
-<section class="hero contact-hero" style="background-color:#f5f5f5; text-align:center; padding:60px 20px;">
+<!-- HERO CONTACT AREA (balanced, professional) -->
+<section class="hero contact-hero" style="background-color:#f5f5f5; text-align:center; padding:40px 20px; border-bottom:2px solid #e2e8f0;">
   <div class="hero-content" style="max-width:700px; margin:0 auto;">
-    <h1 style="font-size:2.5rem; margin-bottom:16px;">Contact Premium RDP</h1>
-    <p style="font-size:1.2rem; line-height:1.6;">
-      Have questions or need support? Fill out the contact form below or reach out directly using the details provided.
+    <h1 style="font-size:2.2rem; font-weight:700; margin-bottom:12px;">Contact Premium RDP</h1>
+    <p style="font-size:1.1rem; line-height:1.6; color:#334155;">
+      Have questions or need support? Fill out the form below, or reach out directly to our HQ in the UK.
     </p>
   </div>
 </section>
 
 <!-- MAIN CONTACT FORM SECTION -->
 <main class="container section" id="contactForm">
-  <form class="contact-form" style="max-width:600px; margin:50px auto; display:flex; flex-direction:column; gap:16px;">
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Your Message" rows="5" required></textarea>
+  <form class="contact-form" style="max-width:600px; margin:40px auto; display:flex; flex-direction:column; gap:16px;">
+    <input type="text" placeholder="Your Name" required style="padding:12px; border-radius:8px; border:1px solid #cbd5e1;">
+    <input type="email" placeholder="Your Email" required style="padding:12px; border-radius:8px; border:1px solid #cbd5e1;">
+    <textarea placeholder="Your Message" rows="5" required style="padding:12px; border-radius:8px; border:1px solid #cbd5e1;"></textarea>
     <button type="submit" class="price-btn" style="background-color:#2563eb; color:#fff; padding:12px 28px; border-radius:8px; font-weight:600; transition:0.3s;">Send Message</button>
   </form>
 
   <!-- HQ INFORMATION -->
-  <section class="hq-info" style="max-width:600px; margin:50px auto; padding:20px; background:#f5f5f5; border-radius:12px; text-align:left;">
-    <h3>Our Headquarters</h3>
+  <section class="hq-info" style="max-width:600px; margin:40px auto; padding:20px; background:#f8fafc; border-radius:12px; text-align:left; box-shadow:0 2px 8px rgba(0,0,0,0.05);">
+    <h3 style="margin-bottom:12px; color:#1e293b;">Our Headquarters</h3>
     <p><strong>Premium Technologies Private Limited</strong><br>
       Unit 29 Highcroft Industrial Estate, Enterprise Road, Horndean, Waterlooville, Hampshire, United Kingdom, PO8 0BT
     </p>
@@ -65,11 +65,11 @@
 </main>
 
 <!-- GOOGLE MAP -->
-<section class="map-section" style="height:400px; margin-top:50px;">
+<section class="map-section" style="height:400px; margin-top:40px;">
   <div id="map" style="width:100%; height:100%; border-radius:22px; overflow:hidden;"></div>
 </section>
 
-<!-- FOOTER (matches index.html footer style) -->
+<!-- FOOTER -->
 <footer class="site-footer">
   <div class="footer-grid footer-columns">
     <section class="footer-col">
@@ -119,14 +119,13 @@
   </p>
 </footer>
 
-<!-- SCRIPTS -->
 <script src="main.js"></script>
 
 <!-- Google Maps API -->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLCCndLbjbGEAKb9CPVCqHlEcgfvkyvVo&callback=initMap" async defer></script>
 <script>
 function initMap() {
-  const location = { lat: 50.8933, lng: -1.0107 }; // HQ coordinates in Horndean, UK
+  const location = { lat: 50.8933, lng: -1.0107 }; // HQ Horndean, UK
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 15,
     center: location,
